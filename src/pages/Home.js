@@ -65,7 +65,7 @@ function Home() {
                 data-aos-delay={500}
                 className="btn-container flex justify-start items-center gap-3"
               >
-                <a target="_blank" href="" className="btn">
+                <a target="_blank" href={home_content?.resume} className="btn">
                   Latest Resume
                 </a>
                 <Link smooth to="projects" className="btn prj-btn">
