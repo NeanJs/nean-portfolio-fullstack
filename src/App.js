@@ -14,6 +14,7 @@ import { useDispatch } from "react-redux";
 import { getfromFirebase } from "./actions/firebasedata";
 import Loader from "./components/loader";
 import Footer from "./components/footer";
+
 function App() {
   const dispatch = useDispatch();
   const [loader, setLoader] = useState(true);
