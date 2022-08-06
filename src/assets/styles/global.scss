@@ -31,8 +31,8 @@ body {
   display: flex;
   width: fit-content;
 }
-.logo {
-  font-family: "Poiret One", cursive;
+.logo, .mobile-nav .logo {
+  font-family: "Poiret One", cursive !important;
   letter-spacing: .5em;
 }
 .main {
@@ -233,5 +233,9 @@ body {
   }
   .user-balloon {
     transform: scale(0.3) translate(100%, -50px);
+  }
+  .logo, .mobile-nav .logo {
+    font-family: "Poiret One", cursive;
+    letter-spacing: .25em;
   }
 }

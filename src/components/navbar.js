@@ -39,7 +39,7 @@ function Navbar() {
   return (
     <>
       <div className="mobile-nav fixed top-0 flex flex-col w-screen ">
-        <div className="header flex items-center justify-between w-full">
+        <div className="header flex items-center justify-between w-full px-1">
           <Link
             smooth
             to="home"
@@ -48,7 +48,7 @@ function Navbar() {
             NEAN
           </Link>
           <div
-            className="burger flex items-center justify-center"
+            className="burger flex items-center justify-center "
             onClick={handleMobileNav}
           >
             <span className="mobile"></span>
