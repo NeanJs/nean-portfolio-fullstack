@@ -6,10 +6,14 @@ import "react-toastify/dist/ReactToastify.css";
 
 import "../assets/styles/contact.scss";
 import SocialHanger from "../components/socialhanger";
+import { useState } from "react";
 
 function Contact() {
+  const [sendling, setSending] = useState(false);
   function sendEmail(e) {
     e.preventDefault();
+    setSending(true);
+
     emailjs
       .sendForm(
         "gmail",
@@ -21,12 +25,13 @@ function Contact() {
         (result) => {
           result.status == 200 &&
             toast.success("Your message was sent successfull!");
+          e.target.reset();
+          setSending(false);
         },
         (error) => {
-          console.log(error.text);
+          toast.error(error.text);
         }
       );
-    e.target.reset();
   }
 
   return (
@@ -83,7 +88,7 @@ function Contact() {
                 name="message"
               />
               <button className="btn" type="submit" value="send">
-                Send Message
+                {sendling ? "Sending..." : "Send Message"}
               </button>
               <ToastContainer />
             </form>

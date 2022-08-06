@@ -1,4 +1,4 @@
-import React,{useState, useEffect} from "react";
+import React, { useState, useEffect } from "react";
 import Home from "./pages/Home";
 import Navbar from "./components/navbar";
 import About from "./pages/About";
@@ -19,19 +19,19 @@ function App() {
   useEffect(() => {
     aos.init({ duration: 700, easing: "ease", once: true });
     dispatch(getfromFirebase());
-    setTimeout(()=>setLoader(false), 4000);
+    setTimeout(() => setLoader(false), 4000);
   }, []);
   return (
     <>
       {loader ? (
-        <Loader/>
+        <Loader />
       ) : (
         <div className="main">
           <Navbar />
           <div className="app">
             <Home />
             <About />
-            <Projects/> 
+            <Projects />
             <Contact />
           </div>
         </div>

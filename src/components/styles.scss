@@ -1,12 +1,11 @@
 // MiniResume
 .featured-projects {
   width: 100%;
-  flex: 0.6;;
+  flex: 0.8;
   flex-wrap: wrap;
   .project {
     background-color: #f8f8f8;
     cursor: pointer;
-    overflow: hidden;
     max-width: 500px;
     max-height: 300px;
     .feature-img {
@@ -20,7 +19,7 @@
       left: 0;
       height: 80%;
       width: 100%;
-      transform: translateY(100%);
+      transform: translateX(300px);
       opacity: 0;
       // background-color: rgba($color: #000, $alpha: 0.8);
       background-color: white;
@@ -46,7 +45,7 @@
       display: none;
     }
     &:hover .body-sub {
-      transform: translateY(0%);
+      transform: translateX(0%);
       opacity: 1;
     }
   }

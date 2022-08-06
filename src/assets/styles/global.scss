@@ -31,9 +31,10 @@ body {
   display: flex;
   width: fit-content;
 }
-.logo, .mobile-nav .logo {
+.logo,
+.mobile-nav .logo {
   font-family: "Poiret One", cursive !important;
-  letter-spacing: .5em;
+  letter-spacing: 10px;
 }
 .main {
   display: flex;
@@ -42,7 +43,7 @@ body {
   max-width: 100vw !important;
   min-height: 100vh !important;
 }
-.route{
+.route {
   letter-spacing: 2px;
 }
 .app {
@@ -233,9 +234,11 @@ body {
   }
   .user-balloon {
     transform: scale(0.3) translate(100%, -50px);
+    z-index: -2;
   }
-  .logo, .mobile-nav .logo {
+  .logo,
+  .mobile-nav .logo {
     font-family: "Poiret One", cursive;
-    letter-spacing: .25em;
+    letter-spacing: 0.25em;
   }
 }
