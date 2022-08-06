@@ -1,0 +1,90 @@
+
+.contact-stripe{
+	background-color: #112337;
+	width: 30vw;
+	z-index: 0 !important;
+position: absolute;
+}
+.form-wrapper{
+background: white;
+display: flex;
+flex-direction: column !important;
+flex: 0.6 !important;
+align-items: center;
+width: 70%;
+z-index: 2 !important;
+height: 500px !important;
+box-shadow: 0px 0px 5px 1px rgba(0,0,0,.15);
+}
+.form-wrapper>*{
+	height: 100% !important;
+}
+.form-container{
+	flex: 0.5;
+	gap: 10px;
+	padding: 10px;
+}
+.form-header{
+flex: 0.2 !important;
+}
+.contact-form{
+	flex: 0.8 !important;
+	height: 100%;
+}
+.form-body{
+
+}
+.form-leftouts{
+	flex: 0.4;
+	height: max-content !important;
+}
+.form-leftouts img{
+	// transform: scalex(-1);ma
+}
+.form-leftouts::before{
+	content: "";
+	height: 60%;
+	width: 3px;
+	background-color: rgba(17, 35, 55, 0.09);
+}
+
+.contact-form input{
+	border-bottom: 1px solid black;
+	padding-top: 40px;
+	outline: none;
+}
+textarea{
+	padding-top: 40px;
+	outline: none;
+	border-bottom: 1px solid black;
+	resize: vertical;
+	max-height: 300px;
+	min-height: 150px;
+}
+.btn{
+// border: 2px solid red;
+width: 50%;
+padding: 10px;
+background: var(--dark);
+	border: 2px solid var(--dark);
+	color: white;
+	transition: all .4s ease;
+}
+.btn:hover{
+	color: var(--dark);
+	background-color: transparent;
+}
+@media (max-width:768px){
+	.form-wrapper{
+		padding: 10px;
+		width: 100% !important;
+	}
+	.form-container, .form-body{
+		flex: 1 !important;
+		width: 100%;
+	}
+	.form-leftouts{
+		display: none;
+	}
+	
+}

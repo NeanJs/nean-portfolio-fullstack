@@ -1,0 +1,86 @@
+// MiniResume
+.featured-projects {
+  width: 100%;
+  flex: 0.6;;
+  flex-wrap: wrap;
+  .project {
+    background-color: #f8f8f8;
+    cursor: pointer;
+    overflow: hidden;
+    max-width: 500px;
+    max-height: 300px;
+    .feature-img {
+      flex: 1;
+      width: 100%;
+      height: 80% !important;
+    }
+    .body-sub {
+      transition: all 0.4s ease;
+      top: 0%;
+      left: 0;
+      height: 80%;
+      width: 100%;
+      transform: translateY(100%);
+      opacity: 0;
+      // background-color: rgba($color: #000, $alpha: 0.8);
+      background-color: white;
+      backdrop-filter: blur(20px);
+      z-index: 10 !important;
+      padding: 10px;
+      .body-head {
+        border-bottom: 1px solid #222;
+      }
+    }
+    .feature-body {
+      padding: 10px;
+      height: 20%;
+    }
+    .body-head {
+      flex: 1;
+      height: 20%;
+    }
+
+    .attach-link {
+      color: white;
+      z-index: 1;
+      display: none;
+    }
+    &:hover .body-sub {
+      transform: translateY(0%);
+      opacity: 1;
+    }
+  }
+}
+// Loader
+#container path {
+  stroke-dasharray: 900px;
+  stroke-dashoffset: 900px;
+  animation: fill 3s ease forwards;
+}
+#loader path {
+  stroke-dasharray: 535px;
+  stroke-dashoffset: 535px;
+  animation: linefill 3s ease forwards 2s;
+}
+.loader {
+  animation: shrink 1s ease forwards 3s;
+}
+@keyframes fill {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes linefill {
+  from {
+    fill: transparent;
+  }
+  to {
+    fill: #222;
+  }
+}
+
+@keyframes shrink {
+  to {
+    transform: scale(0);
+  }
+}
