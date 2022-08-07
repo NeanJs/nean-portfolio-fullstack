@@ -71,6 +71,8 @@ function Projects() {
                     <div className="tech-stack flex items-end gap-5">
                       {prj?.techstack.map((tech, id) => (
                         <div
+                        data-aos="fade-right"
+                        data-aos-delay={id * 200}
                           className="tech flex flex-col items-center  gap-2 text-sm"
                           key={`${tech.name}-${id}`}
                         >

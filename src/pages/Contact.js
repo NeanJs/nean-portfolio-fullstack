@@ -24,7 +24,9 @@ function Contact() {
       .then(
         (result) => {
           result.status == 200 &&
-            toast.success("Your message was sent successfull!");
+            toast.success("Your message was sent successfull!",{
+              position:"bottom-right",
+            });
           e.target.reset();
           setSending(false);
         },
@@ -67,7 +69,7 @@ function Contact() {
                 data-aos="fade-left"
                 data-aos-delay={200}
                 placeholder="Your Email"
-                type="text"
+                type="email"
                 required
                 name="email"
               />{" "}

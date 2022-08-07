@@ -7,6 +7,8 @@ import { useSelector } from "react-redux";
 import Queue from "../assets/images/svgs/queue.svg";
 import { GrLinkNext } from "react-icons/gr";
 import { useEffect } from "react";
+import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 function Navbar() {
   const [loading, setLoading] = useState(true);
   useEffect(() => {
@@ -142,17 +144,21 @@ function Navbar() {
                   className="featured-section h-full flex flex-col p-3 gap-2 items-center"
                   data-aos="fade-up"
                 >
-                  <span className="header text-md">
-                    <u>Featured Projects</u>
+                  <span className="text-md flex flex-col items-center">
+                    Featured Projects
+                    <span className="text-sm">
+                      Here's some projects I would like to feature
+                    </span>
                   </span>
-                  <div className="featured-projects flex justify-center gap-10 w-full h-full ">
+                  <div className="featured-projects flex justify-center gap-10 items-center flex-wrap p-10">
                     {projects.map(
                       (project, id) =>
                         project.featured && (
                           <div
+                          data-aos-offset={-500}
                             data-aos="fade-up"
-                            data-aos-delay={id * 300}
-                            className="project relative shadow-md rounded"
+                            data-aos-delay={id * 200}
+                            className="project relative shadow-md rounded-xl"
                             key={`${id}-${project.title}`}
                           >
                             <img src={project.image} className="feature-img" />
