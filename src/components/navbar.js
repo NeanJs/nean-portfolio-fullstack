@@ -145,7 +145,7 @@ function Navbar() {
                   <span className="text-md flex flex-col items-center">
                     Featured Projects
                     <span className="text-sm">
-                      Here's some projects I would like to feature
+                      Here are some projects I would like to feature
                     </span>
                   </span>
                   <div className="featured-projects flex justify-center gap-10 items-center flex-wrap p-10">

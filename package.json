@@ -29,12 +29,14 @@
     "redux": "^4.2.0",
     "redux-thunk": "^2.4.1",
     "sass": "^1.53.0",
+    "serve": "^14.0.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
     "predeploy": "react-scripts build",
     "deploy": "gh-pages -d build",
     "start": "react-scripts start",
+    "dev": "serve -s build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
