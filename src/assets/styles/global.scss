@@ -35,6 +35,7 @@ body {
 .mobile-nav .logo {
   font-family: "Poiret One", cursive !important;
   letter-spacing: 10px;
+
 }
 .main {
   display: flex;
@@ -232,6 +233,7 @@ body {
     transform: scaleX(-1) scale(0.4) translateY(100px);
   }
   .user-balloon {
+    z-index: -2;
     transform: scale(0.3) translate(100%, -50px);
     z-index: -2;
   }
