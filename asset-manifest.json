@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/nijanadhikari.com.np/static/css/main.8c65b18c.css",
-    "main.js": "/nijanadhikari.com.np/static/js/main.10dde4f9.js",
-    "static/media/dark.gif": "/nijanadhikari.com.np/static/media/dark.1db13257ef76c8efd2a3.gif",
-    "static/media/contact-form.svg": "/nijanadhikari.com.np/static/media/contact-form.b46f9ea2967a8567fb48601a1e2dbdf2.svg",
-    "static/media/queue.svg": "/nijanadhikari.com.np/static/media/queue.4d66ca7e2cd949cf8ab513868821fb54.svg",
-    "static/media/balloon.svg": "/nijanadhikari.com.np/static/media/balloon.4128623c06f92128cda868a0f452aa61.svg",
-    "static/media/user-sitting.svg": "/nijanadhikari.com.np/static/media/user-sitting.bdafa69e0a9a99458142f025b182584e.svg",
-    "static/media/trees.svg": "/nijanadhikari.com.np/static/media/trees.a2ee5848fb6e0a3353a78960d40076e7.svg",
-    "static/media/trees-other.svg": "/nijanadhikari.com.np/static/media/trees-other.603f27e799c2da485d9baa375bfe2bc2.svg",
-    "index.html": "/nijanadhikari.com.np/index.html",
-    "main.8c65b18c.css.map": "/nijanadhikari.com.np/static/css/main.8c65b18c.css.map",
-    "main.10dde4f9.js.map": "/nijanadhikari.com.np/static/js/main.10dde4f9.js.map"
+    "main.css": "/static/css/main.6eac5adb.css",
+    "main.js": "/static/js/main.e27a4807.js",
+    "static/media/dark.gif": "/static/media/dark.1db13257ef76c8efd2a3.gif",
+    "static/media/contact-form.svg": "/static/media/contact-form.b46f9ea2967a8567fb48601a1e2dbdf2.svg",
+    "static/media/queue.svg": "/static/media/queue.4d66ca7e2cd949cf8ab513868821fb54.svg",
+    "static/media/balloon.svg": "/static/media/balloon.4128623c06f92128cda868a0f452aa61.svg",
+    "static/media/user-sitting.svg": "/static/media/user-sitting.bdafa69e0a9a99458142f025b182584e.svg",
+    "static/media/trees.svg": "/static/media/trees.a2ee5848fb6e0a3353a78960d40076e7.svg",
+    "static/media/trees-other.svg": "/static/media/trees-other.603f27e799c2da485d9baa375bfe2bc2.svg",
+    "index.html": "/index.html",
+    "main.6eac5adb.css.map": "/static/css/main.6eac5adb.css.map",
+    "main.e27a4807.js.map": "/static/js/main.e27a4807.js.map"
   },
   "entrypoints": [
-    "static/css/main.8c65b18c.css",
-    "static/js/main.10dde4f9.js"
+    "static/css/main.6eac5adb.css",
+    "static/js/main.e27a4807.js"
   ]
 }
